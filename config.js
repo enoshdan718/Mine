@@ -20,7 +20,7 @@ const CONFIG = {
 
     // Questions and answers
     // Customize each question and its possible responses
-    questions: {
+     questions: {
     first: {
         text: "Do you miss me my Bujjikanna 🥺😭❤️",
         yesBtn: "Yes 😍", 
@@ -37,9 +37,7 @@ const CONFIG = {
         yesBtn: "Yes! 😘",
         noBtn: "Dhobbei pandhii😭"
     }
-}
-
-,
+},
 
     // Love meter messages
     // They show up depending on how far they slide the meter
