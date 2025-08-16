@@ -316,3 +316,18 @@ h2 {
     transform: scale(1.05);
     background: var(--secondary-color);
 } 
+
+/* 🌷🌹 Falling Petals Animation */
+.falling-petal {
+    position: fixed;
+    top: -50px;
+    pointer-events: none;
+    animation-name: fall;
+    animation-timing-function: linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
