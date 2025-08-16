@@ -200,6 +200,25 @@ function createHeartExplosion() {
     }
 }
 
+// 🌷🌹 Falling Petals Effect
+function createPetal() {
+    const petal = document.createElement("div");
+    petal.classList.add("falling-petal");
+    petal.textContent = Math.random() > 0.5 ? "🌷" : "🌹"; // Random tulip or rose
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.animationDuration = Math.random() * 5 + 5 + "s"; // 5-10 seconds
+    petal.style.fontSize = Math.random() * 10 + 20 + "px"; // Random size
+    document.body.appendChild(petal);
+
+    // Remove petal after animation
+    setTimeout(() => {
+        petal.remove();
+    }, 10000);
+}
+
+// Create petals continuously
+setInterval(createPetal, 500);
+
 // Music Player Setup
 function setupMusicPlayer() {
     const musicControls = document.getElementById('musicControls');
